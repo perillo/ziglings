@@ -2,6 +2,7 @@ name: CI
 on:
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 defaults:
   run:
@@ -42,5 +43,5 @@ jobs:
       with:
         version: master
 
-    - name: Run unit tests
-      run: zig build test
+    - name: Run unit uest
+      run: ci/test.sh

@@ -27,4 +27,4 @@ jobs:
       with:
         version: master
 
-    - run: patches/eowyn.sh
+    - run: ci/eowyn.sh
